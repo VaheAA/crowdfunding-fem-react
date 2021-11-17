@@ -1,7 +1,6 @@
 import {Fragment} from 'react';
 import './App.css';
-import Header from './components/header/Header';
-
+import Header from './containers/header/Header';
 function App() {
   return (
     <Fragment>
