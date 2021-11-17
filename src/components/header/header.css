@@ -1,5 +1,5 @@
 .header {
-  background: url('../assets//image-hero-desktop.jpg') no-repeat top
+  background: url('../../assets/image-hero-desktop.jpg') no-repeat top
     center/cover;
   min-height: 400px;
 }
@@ -109,7 +109,7 @@
 
 @media screen and (max-width: 550px) {
   .header {
-    background: url('../assets/image-hero-mobile.jpg') no-repeat top
+    background: url('../../assets/image-hero-mobile.jpg') no-repeat top
       center/cover;
   }
   .header__inner {
