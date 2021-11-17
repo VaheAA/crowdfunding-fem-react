@@ -1,10 +1,11 @@
 import {Fragment} from 'react';
+import {Header, Main} from './containers';
 import './App.css';
-import Header from './containers/header/Header';
 function App() {
   return (
     <Fragment>
       <Header />
+      <Main />
     </Fragment>
   );
 }

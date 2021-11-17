@@ -1,0 +1,71 @@
+.top {
+  position: relative;
+  bottom: 90px;
+}
+.top__inner {
+  background: #fff;
+  border-radius: 10px;
+  padding: 0 50px 30px;
+}
+.top__logo {
+  text-align: center;
+  position: relative;
+  bottom: 25px;
+  margin-bottom: -5px;
+}
+.top__content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.top__title {
+  text-align: center;
+  padding-bottom: 25px;
+}
+.top__desc {
+  text-align: center;
+  color: var(--color-dark-gray);
+}
+.top__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn__bookmark {
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 35px;
+  border: none;
+  width: 165px;
+  text-align: center;
+  padding-right: 20px;
+  font-weight: bold;
+  color: var(--color-dark-gray);
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+}
+.btn__bookmark:hover {
+  opacity: 0.75;
+}
+.btn__bookmark img {
+  display: block;
+}
+
+@media screen and (max-width: 550px) {
+  .top__inner {
+    padding: 0 25px 20px;
+  }
+  .top__btns {
+    justify-content: center;
+    gap: 5px;
+  }
+  .btn__bookmark {
+    width: 55px;
+  }
+  .btn__bookmark span {
+    display: none;
+  }
+}
