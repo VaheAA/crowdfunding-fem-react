@@ -35,4 +35,8 @@
   font-weight: 500;
 }
 @media screen and (max-width: 550px) {
+  .modal__success-inner {
+    padding: 25px;
+    margin: 100px 20px;
+  }
 }

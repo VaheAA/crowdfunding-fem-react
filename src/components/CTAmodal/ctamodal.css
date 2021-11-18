@@ -77,10 +77,18 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 60px;
   padding: 10px 20px;
-  outline: none;
   text-align: center;
   font-weight: bold;
+  outline: none;
 }
+
+.form__input input:hover {
+  border: 2px solid var(--color-mod-cyan);
+}
+.form__input input:focus {
+  border: 2px solid var(--color-mod-cyan);
+}
+
 .label__text {
   color: var(--color-dark-gray);
   font-weight: 500;
