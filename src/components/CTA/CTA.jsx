@@ -1,5 +1,6 @@
 import React from 'react';
 import {BTN} from '..';
+
 import './cta.css';
 
 const CTA = ({fundTitle, amount, fundText, count}) => {
