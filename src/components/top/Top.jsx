@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {logo, bookmark} from './imports';
 import {BTN} from '..';
 import './top.css';
 
 const Top = () => {
+  const [isBookmarked, setBookmark] = useState(false);
+  const handleBookmark = () => {
+    setBookmark(!isBookmarked);
+  };
+
   return (
     <section className="top">
       <div className="container-sm">
@@ -20,9 +25,14 @@ const Top = () => {
           </div>
           <div className="top__btns">
             <BTN text="Back this project" />
-            <button type="button" className="btn__bookmark">
+            <button
+              type="button"
+              className="btn__bookmark"
+              onClick={handleBookmark}>
               <img src={bookmark} alt="bookmark" />
-              <span>Bookmark</span>
+              <span style={{color: isBookmarked ? '#147b74' : ''}}>
+                {!isBookmarked ? 'Bookmark' : 'Bookmarked'}
+              </span>
             </button>
           </div>
         </div>
