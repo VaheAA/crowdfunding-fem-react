@@ -1,11 +1,12 @@
 import React from 'react';
-import {Top, Progress} from '../../components';
+import {Top, Progress, Fund} from '../../components';
 
 const Main = () => {
   return (
     <main>
       <Top />
       <Progress />
+      <Fund />
     </main>
   );
 };

@@ -6,7 +6,7 @@
 body {
   height: 100%;
   font-family: var(--font);
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.04);
 }
 a,
 a:active {
@@ -22,7 +22,7 @@ ul {
 }
 
 .container-sm {
-  max-width: 780px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
 }
