@@ -1,4 +1,5 @@
 import React from 'react';
+import CTA from '../CTA/CTA';
 import './fund.css';
 
 const Fund = () => {
@@ -23,6 +24,27 @@ const Fund = () => {
               </p>
             </div>
           </div>
+          <CTA
+            fundTitle="Bamboo Stand"
+            amount="25"
+            fundText="You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+you’ll be added to a special Backer member list."
+            count="101"
+          />
+          <CTA
+            fundTitle="Black Edition Stand"
+            amount="75"
+            fundText="You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+member list. Shipping is included."
+            count="64"
+          />
+          <CTA
+            fundTitle="Mahogany Special Edition"
+            amount="200"
+            fundText="You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+to our Backer member list. Shipping is included."
+            count="0"
+          />
         </div>
       </div>
     </section>

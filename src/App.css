@@ -26,3 +26,8 @@ ul {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+.container-xsm {
+  max-width: 660px;
+  margin: 0 auto;
+}
