@@ -5,6 +5,12 @@
   pointer-events: none;
   opacity: 0.6;
 }
+
+.cta--disabled .btn__fund {
+  background-color: var(--color-dark-gray);
+  pointer-events: none;
+}
+
 .cta__inner {
   border-radius: 10px;
   border: 1px solid rgba(122, 122, 122, 0.35);

@@ -1,5 +1,5 @@
 import React from 'react';
-import CTA from '../CTA/CTA';
+import {CTA} from '..';
 import './fund.css';
 
 const Fund = () => {
