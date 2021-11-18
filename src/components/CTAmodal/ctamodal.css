@@ -51,6 +51,8 @@
   font-size: 14px;
 }
 .modal__cta-desc {
+  font-size: 16px;
+  line-height: 24px;
   margin-left: 34px;
   color: var(--color-dark-gray);
   padding-bottom: 30px;
@@ -104,4 +106,35 @@
   top: 10px;
   color: var(--color-dark-gray);
   font-size: 14px;
+}
+@media screen and (max-width: 550px) {
+  .line {
+    top: 75%;
+    bottom: 0;
+  }
+  .modal__cta-desc {
+    margin-left: 0;
+  }
+  .form__controls--last {
+    flex-wrap: wrap;
+    margin-left: 0;
+    padding-top: 20px;
+  }
+  .label__text {
+    width: 100%;
+    text-align: center;
+  }
+  .label__title,
+  .label__amount,
+  .label__count {
+    font-size: 14px;
+  }
+  .label {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .label__info {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

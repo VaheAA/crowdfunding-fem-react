@@ -6,14 +6,13 @@
   left: 0;
   top: 0;
   z-index: 15;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 .modal__inner {
   height: 100%;
   background: #fff;
   border-radius: 10px;
   padding: 50px 50px 30px;
-  overflow-y: scroll;
 }
 .modal__info {
   display: flex;
@@ -36,4 +35,9 @@
   background: transparent;
   border: none;
   cursor: pointer;
+}
+@media screen and (max-width: 550px) {
+  .modal__inner {
+    padding: 25px 10px 10px;
+  }
 }

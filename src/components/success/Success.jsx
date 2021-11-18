@@ -5,13 +5,13 @@ import './success.css';
 
 const Success = () => {
   const [isOpened, setOpened] = useState(false);
-  const handleClose = () => {
+  const openModal = () => {
     setOpened(!isOpened);
   };
   return (
     <div
       className="modal__success"
-      style={isOpened ? {display: 'block'} : {display: 'none'}}>
+      style={isOpened ? {display: 'none'} : {display: 'block'}}>
       <div className="modal__success-inner">
         <div className="modal__success-logo">
           <img src={logo} alt="success" />
@@ -22,7 +22,7 @@ const Success = () => {
           Monitor Riser worldwide. You will get an email once our campaign is
           completed.
         </p>
-        <BTN text="Got it!" onClick={handleClose} />
+        <BTN text="Got it!" openModal={openModal} />
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ const CTA = ({fundTitle, amount, fundText, count, isOpen}) => {
     setShown(!isShown);
   };
   return (
-    <Fragment style={{position: 'relative'}}>
+    <Fragment>
       <div
         className={count === '0' ? 'cta cta--disabled' : 'cta'}
         status={isOpen}>
