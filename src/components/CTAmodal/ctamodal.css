@@ -109,7 +109,7 @@
 }
 @media screen and (max-width: 550px) {
   .line {
-    top: 75%;
+    top: 70%;
     bottom: 0;
   }
   .modal__cta-desc {
@@ -118,7 +118,7 @@
   .form__controls--last {
     flex-wrap: wrap;
     margin-left: 0;
-    padding-top: 20px;
+    margin-top: 20px;
   }
   .label__text {
     width: 100%;
