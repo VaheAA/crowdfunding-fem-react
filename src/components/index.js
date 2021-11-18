@@ -4,3 +4,4 @@ export { default as Progress } from './progress/Progress';
 export { default as Fund } from './fund/Fund';
 export { default as CTA } from './CTA/CTA';
 export { default as CTAmodal } from './CTAmodal/CTAmodal';
+export { default as Success } from './success/Success';

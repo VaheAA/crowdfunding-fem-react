@@ -1,6 +1,8 @@
 .modal {
   margin-top: 50px;
   margin-bottom: 50px;
+  position: relative;
+  display: none;
 }
 .modal__inner {
   background: #fff;

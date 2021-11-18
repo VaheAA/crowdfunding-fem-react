@@ -1,7 +1,7 @@
 import React from 'react';
 import close from '../../assets/icon-close-modal.svg';
 import './modal.css';
-import {CTAmodal} from '../../components';
+import {CTAmodal, Success} from '../../components';
 
 const Modal = () => {
   return (
@@ -49,6 +49,7 @@ you will be signed up to receive product updates via email."
           />
         </div>
       </div>
+      <Success style={{display: 'block'}} />
     </section>
   );
 };

@@ -6,14 +6,19 @@ const CTAmodal = ({label, amount, count, desc}) => {
   const handleChange = () => {
     setChecked(!isChecked);
   };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <div
       className={
         count === '0' ? 'modal__cta modal__cta--disabled' : 'modal__cta'
       }>
       <div className="container-xsm">
-        <div className="modal__cta-inner">
-          <form className="form">
+        <div
+          className="modal__cta-inner"
+          style={isChecked ? {border: '3px solid #3cb4ac'} : {}}>
+          <form className="form" onSubmit={handleSubmit}>
             <div className="form__controls">
               <input
                 className="checkbox"
@@ -39,7 +44,7 @@ const CTAmodal = ({label, amount, count, desc}) => {
                 Enter your pledge
               </label>
               <div className="form__input">
-                <span class="currency-code">$</span>
+                <span className="currency-code">$</span>
                 <input className="input__fund" type="text" name="sum" />
                 <button className="btn__submit" type="submit">
                   Continue
