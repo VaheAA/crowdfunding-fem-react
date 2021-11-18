@@ -4,7 +4,7 @@ import './cta.css';
 
 const CTA = ({fundTitle, amount, fundText, count}) => {
   return (
-    <div className="cta">
+    <div className={count === '0' ? 'cta cta--disabled' : 'cta'}>
       <div className="container-xsm">
         <div className="cta__inner">
           <div className="cta__heading">
