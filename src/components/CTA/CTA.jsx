@@ -9,6 +9,7 @@ const CTA = ({fundTitle, amount, fundText, count, isOpen}) => {
   const [isShown, setShown] = useState(false);
   const openModal = () => {
     setShown(!isShown);
+    document.querySelector('body').style.overflowY = 'hidden';
   };
   return (
     <Fragment>
