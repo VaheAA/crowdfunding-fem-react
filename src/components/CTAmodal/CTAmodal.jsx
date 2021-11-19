@@ -2,14 +2,10 @@ import React, {useState} from 'react';
 import './ctamodal.css';
 import {Fragment} from 'react/cjs/react.production.min';
 
-const CTAmodal = ({label, amount, count, desc, handleSubmit, value}) => {
+const CTAmodal = ({label, amount, count, desc}) => {
   const [isChecked, setChecked] = useState(false);
   const handleChange = () => {
-    cleanChecked();
     setChecked(!isChecked);
-  };
-  const cleanChecked = () => {
-    setChecked(isChecked);
   };
   return (
     <Fragment>
@@ -20,14 +16,17 @@ const CTAmodal = ({label, amount, count, desc, handleSubmit, value}) => {
         <div className="container-xsm">
           <div
             className="modal__cta-inner"
-            style={isChecked ? {border: '3px solid #3cb4ac'} : {}}>
-            <form className="form" onSubmit={handleSubmit}>
+            style={
+              isChecked
+                ? {border: '3px solid #3cb4ac'}
+                : {border: '1px solid rgba(122, 122, 122, 0.35)'}
+            }>
+            <div className="form">
               <div className="form__controls">
                 <input
                   className="checkbox"
                   type="radio"
                   name="checkbox"
-                  value={value}
                   onChange={handleChange}
                 />
                 <label className="label" htmlFor="checkbox">
@@ -55,7 +54,7 @@ const CTAmodal = ({label, amount, count, desc, handleSubmit, value}) => {
                   </button>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
           <div
             className="line"

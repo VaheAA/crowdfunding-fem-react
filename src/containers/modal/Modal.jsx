@@ -39,40 +39,34 @@ const Modal = () => {
                       <img src={close} alt="" />
                     </button>
                   </div>
-
-                  <CTAmodal
-                    label="Pledge with no reward"
-                    desc="Choose to support us without a reward if you simply believe in our project. As a backer,
+                  <form onSubmit={handleSubmit}>
+                    <CTAmodal
+                      label="Pledge with no reward"
+                      desc="Choose to support us without a reward if you simply believe in our project. As a backer,
 you will be signed up to receive product updates via email."
-                    handleSubmit={handleSubmit}
-                    value=""
-                  />
-                  <CTAmodal
-                    label="Bamboo Stand"
-                    amount="Pledge $25 or more"
-                    count="101"
-                    desc="You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+                    />
+                    <CTAmodal
+                      label="Bamboo Stand"
+                      amount="Pledge $25 or more"
+                      count="101"
+                      desc="You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
         you’ll be added to a special Backer member list."
-                    handleSubmit={handleSubmit}
-                    value="25"
-                  />
-                  <CTAmodal
-                    label="Black Edition Stand"
-                    amount="Pledge $75 or more"
-                    count="64"
-                    desc="You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+                    />
+                    <CTAmodal
+                      label="Black Edition Stand"
+                      amount="Pledge $75 or more"
+                      count="64"
+                      desc="You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
         member list. Shipping is included."
-                    handleSubmit={handleSubmit}
-                    value="75"
-                  />
-                  <CTAmodal
-                    label="Mahogany Special Edition"
-                    amount="Pledge $200 or more"
-                    count="0"
-                    desc="You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+                    />
+                    <CTAmodal
+                      label="Mahogany Special Edition"
+                      amount="Pledge $200 or more"
+                      count="0"
+                      desc="You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
         to our Backer member list. Shipping is included."
-                    handleSubmit={handleSubmit}
-                  />
+                    />
+                  </form>
                 </div>
               </div>
             </section>
