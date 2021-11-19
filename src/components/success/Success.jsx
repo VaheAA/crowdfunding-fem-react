@@ -7,6 +7,7 @@ const Success = () => {
   const [isOpened, setOpened] = useState(false);
   const openModal = () => {
     setOpened(!isOpened);
+    document.querySelector('body').style.overflowY = 'auto';
   };
   return (
     <div

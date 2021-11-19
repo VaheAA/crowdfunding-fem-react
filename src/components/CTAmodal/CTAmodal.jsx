@@ -25,7 +25,7 @@ const CTAmodal = ({label, amount, count, desc, handleSubmit, value}) => {
               <div className="form__controls">
                 <input
                   className="checkbox"
-                  type="checkbox"
+                  type="radio"
                   name="checkbox"
                   value={value}
                   onChange={handleChange}
