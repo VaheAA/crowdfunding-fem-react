@@ -16,7 +16,7 @@ const Progress = () => {
               <p className="progress__info-text">total backers</p>
             </div>
             <div className="progress__info-col">
-              <h3 className="progress__info-title">56</h3>
+              <h2 className="progress__info-title">56</h2>
               <p className="progress__info-text">days left</p>
             </div>
           </div>
