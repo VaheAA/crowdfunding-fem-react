@@ -18,7 +18,7 @@ const CTA = ({fundTitle, amount, fundText, count, isOpen}) => {
         <div className="container-xsm">
           <div className="cta__inner">
             <div className="cta__heading">
-              <h5 className="cta__title">{fundTitle}</h5>
+              <h3 className="cta__title">{fundTitle}</h3>
               <p className="cta__amount">Pledge ${amount} or more</p>
             </div>
             <div className="cta__desc">

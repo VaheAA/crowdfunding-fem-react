@@ -2,10 +2,14 @@ import React, {useState} from 'react';
 import './ctamodal.css';
 import {Fragment} from 'react/cjs/react.production.min';
 
-const CTAmodal = ({label, amount, count, desc, handleSubmit}) => {
+const CTAmodal = ({label, amount, count, desc, handleSubmit, value}) => {
   const [isChecked, setChecked] = useState(false);
   const handleChange = () => {
+    cleanChecked();
     setChecked(!isChecked);
+  };
+  const cleanChecked = () => {
+    setChecked(isChecked);
   };
   return (
     <Fragment>
@@ -23,6 +27,7 @@ const CTAmodal = ({label, amount, count, desc, handleSubmit}) => {
                   className="checkbox"
                   type="checkbox"
                   name="checkbox"
+                  value={value}
                   onChange={handleChange}
                 />
                 <label className="label" htmlFor="checkbox">

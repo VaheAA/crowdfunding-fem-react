@@ -29,7 +29,7 @@ const Top = () => {
               type="button"
               className="btn__bookmark"
               onClick={handleBookmark}>
-              <img src={bookmark} alt="bookmark" />
+              <img src={bookmark} alt="icon" />
               <span style={{color: isBookmarked ? '#147b74' : ''}}>
                 {!isBookmarked ? 'Bookmark' : 'Bookmarked'}
               </span>

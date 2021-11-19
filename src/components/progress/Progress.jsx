@@ -8,15 +8,15 @@ const Progress = () => {
         <div className="progress__inner">
           <div className="progress__info">
             <div className="progress__info-col">
-              <h4 className="progress__info-title">$89,914</h4>
+              <h3 className="progress__info-title">$89,914</h3>
               <p className="progress__info-text">of $100,000 backed</p>
             </div>
             <div className="progress__info-col">
-              <h4 className="progress__info-title">5,007</h4>
+              <h3 className="progress__info-title">5,007</h3>
               <p className="progress__info-text">total backers</p>
             </div>
             <div className="progress__info-col">
-              <h4 className="progress__info-title">56</h4>
+              <h3 className="progress__info-title">56</h3>
               <p className="progress__info-text">days left</p>
             </div>
           </div>
