@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './ctamodal.css';
 import {Fragment} from 'react/cjs/react.production.min';
 
-const CTAmodal = ({label, amount, count, desc}) => {
+const CTAmodal = ({label, amount, count, desc, min}) => {
   const [isChecked, setChecked] = useState(false);
   const handleChange = () => {
     setChecked(!isChecked);
@@ -48,7 +48,13 @@ const CTAmodal = ({label, amount, count, desc}) => {
                 </label>
                 <div className="form__input">
                   <span className="currency-code">$</span>
-                  <input className="input__fund" type="text" name="sum" />
+                  <input
+                    className="input__fund"
+                    type="number"
+                    name="sum"
+                    min={min}
+                    placeholder={min}
+                  />
                   <button className="btn__submit" type="submit">
                     Continue
                   </button>

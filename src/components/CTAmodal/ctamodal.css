@@ -80,8 +80,13 @@
   text-align: center;
   font-weight: bold;
   outline: none;
+  -moz-appearance: textfield;
 }
-
+.form__input input::-webkit-outer-spin-button,
+.form__input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .form__input input:hover {
   border: 2px solid var(--color-mod-cyan);
 }
